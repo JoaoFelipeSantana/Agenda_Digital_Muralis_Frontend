@@ -19,7 +19,7 @@
                 <button class="btn" id="btn_novo_contato">Novo Contato <span class="plus_symbol">+</span></button>
             </aside>
 
-            <main class="client_list">
+            <main class="client_list" id="client_container_list">
                 <div class="client">
                     <span>Nome exemplo</span>
                     <span>xxx.xxx.xxx-xx</span>
@@ -69,24 +69,12 @@
                             <input type="text" id="txt_estado" name="txt_estado" readonly class="small-input">
                         </div>
                         <div class="field">
+                            <label for="num_residencia">Nº</label>
+                            <input type="number" id="num_residencia" name="num_residencia" class="small-input">
+                        </div>
+                        <div class="field">
                             <label for="dt_nascimento">Data de Nascimento</label>
-                            <input type="date" id="dt_nascimento" name="dt_nascimento">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="field">
-                            <label for="txt_tipo_contato">Tipo Contato</label>
-                            <input type="text" id="txt_tipo_contato" name="txt_tipo_contato">
-                        </div>
-                        <div class="field">
-                            <label for="txt_contato">Contato</label>
-                            <input type="text" id="txt_contato" name="txt_contato">
-                        </div>
-                    </div>
-                    <div class="form-group full-width">
-                        <div class="field">
-                            <label for="txt_obs">Observação</label>
-                            <input type="text" id="txt_obs" name="txt_obs">
+                            <input type="date" id="dt_nascimento" name="dt_nascimento" required>
                         </div>
                     </div>
                     <div class="buttons">
@@ -136,5 +124,6 @@
         </div>
     </div>
     <script src="js/popups.js"></script>
+    <script src="js/getAllClientes.js"></script>
 </body>
 </html>
