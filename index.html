@@ -15,8 +15,8 @@
 
         <div class="content">
             <aside class="sidebar">
-                <button class="btn">Novo Cliente <span class="plus_symbol">+</span></button>
-                <button class="btn">Novo Contato <span class="plus_symbol">+</span></button>
+                <button class="btn" id="btn_novo_cliente">Novo Cliente <span class="plus_symbol">+</span></button>
+                <button class="btn" id="btn_novo_contato">Novo Contato <span class="plus_symbol">+</span></button>
             </aside>
 
             <main class="client_list">
@@ -29,5 +29,112 @@
             </main>
         </div>
     </div>
+    <div id="back_popup_create_cliente">
+        <div class="popup" id="pop_create_cliente">
+            <div class="popup-content">
+                <form>
+                    <div class="form-group">
+                        <div class="field">
+                            <label for="txt_nome">Nome*</label>
+                            <input type="text" id="txt_nome" name="txt_nome" required>
+                        </div>
+                        <div class="field">
+                            <label for="txt_cpf">CPF*</label>
+                            <input type="text" id="txt_cpf" name="txt_cpf" placeholder="xxx.xxx.xxx-xx">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="field">
+                            <label for="txt_cep">CEP</label>
+                            <input type="text" id="txt_cep" name="txt_cep">
+                        </div>
+                        <div class="field">
+                            <label for="txt_logradouro">Logradouro</label>
+                            <input type="text" id="txt_logradouro" name="txt_logradouro" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="field">
+                            <label for="txt_cidade">Cidade</label>
+                            <input type="text" id="txt_cidade" name="txt_cidade" readonly>
+                        </div>
+                        <div class="field">
+                            <label for="txt_bairro">Bairro</label>
+                            <input type="text" id="txt_bairro" name="txt_bairro" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="field">
+                            <label for="txt_estado">Estado</label>
+                            <input type="text" id="txt_estado" name="txt_estado" readonly class="small-input">
+                        </div>
+                        <div class="field">
+                            <label for="dt_nascimento">Data de Nascimento</label>
+                            <input type="date" id="dt_nascimento" name="dt_nascimento">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="field">
+                            <label for="txt_tipo_contato">Tipo Contato</label>
+                            <input type="text" id="txt_tipo_contato" name="txt_tipo_contato">
+                        </div>
+                        <div class="field">
+                            <label for="txt_contato">Contato</label>
+                            <input type="text" id="txt_contato" name="txt_contato">
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <div class="field">
+                            <label for="txt_obs">Observação</label>
+                            <input type="text" id="txt_obs" name="txt_obs">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="create">Cadastrar</button>
+                        <button type="button" class="cancel" id="btn_cancelar_cliente">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="back_popup_create_contato">
+        <div class="popup" id="pop_create_contato">
+            <div class="popup-content">
+                <form>
+                    <div class="form-group">
+                        <div class="field">
+                            <label for="txt_nome">Nome*</label>
+                            <input type="text" id="txt_nome" name="txt_nome" required>
+                        </div>
+                        <div class="field">
+                            <label for="txt_cpf">CPF*</label>
+                            <input type="text" id="txt_cpf" name="txt_cpf" placeholder="xxx.xxx.xxx-xx">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="field">
+                            <label for="txt_tipo_contato">Tipo Contato</label>
+                            <input type="text" id="txt_tipo_contato" name="txt_tipo_contato">
+                        </div>
+                        <div class="field">
+                            <label for="txt_contato">Contato</label>
+                            <input type="text" id="txt_contato" name="txt_contato">
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <div class="field">
+                            <label for="txt_obs">Observação</label>
+                            <input type="text" id="txt_obs" name="txt_obs">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="create">Cadastrar</button>
+                        <button type="button" class="cancel" id="btn_cancelar_contato">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/popups.js"></script>
 </body>
 </html>
