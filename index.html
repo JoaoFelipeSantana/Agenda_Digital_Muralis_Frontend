@@ -32,7 +32,7 @@
     <div id="back_popup_create_cliente">
         <div class="popup" id="pop_create_cliente">
             <div class="popup-content">
-                <form>
+                <form id="cadastro-cliente">
                     <div class="form-group">
                         <div class="field">
                             <label for="txt_nome">Nome*</label>
@@ -46,7 +46,7 @@
                     <div class="form-group">
                         <div class="field">
                             <label for="txt_cep">CEP</label>
-                            <input type="text" id="txt_cep" name="txt_cep">
+                            <input type="text" id="txt_cep" name="txt_cep" onblur="buscarCEP()">
                         </div>
                         <div class="field">
                             <label for="txt_logradouro">Logradouro</label>
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     <div class="buttons">
-                        <button type="button" class="create">Cadastrar</button>
+                        <button type="button" class="create" id="btn_cadastrar_cliente">Cadastrar</button>
                         <button type="button" class="cancel" id="btn_cancelar_cliente">Cancelar</button>
                     </div>
                 </form>
@@ -125,5 +125,6 @@
     </div>
     <script src="js/popups.js"></script>
     <script src="js/getAllClientes.js"></script>
+    <script src="js/createCliente.js"></script>
 </body>
 </html>
